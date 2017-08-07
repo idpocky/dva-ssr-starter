@@ -1,0 +1,48 @@
+{
+  "name": "dva-ssr-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:idpocky/dva-ssr-starter.git",
+  "author": "Xiaobo <idpocky@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "install-node": "6.9.2"
+  },
+  "dependencies": {
+    "babel-register": "^6.24.1",
+    "babel-runtime": "^6.9.2",
+    "chalk": "^2.1.0",
+    "css-modules-require-hook": "^4.0.6",
+    "dva": "^1.2.1",
+    "express": "^4.15.4",
+    "prop-types": "^15.5.10",
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-dva-hmr": "^0.3.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.4.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "redbox-react": "^1.5.0",
+    "roadhog": "^1.0.1"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js --ext .jsx src/; exit 0",
+    "dev": "BROWSER=none CLEAR_CONSOLE=none roadhog server",
+    "build": "roadhog build --analyze",
+    "start": "roadhog server",
+    "test": "roadhog test",
+    "precommit": "npm run lint",
+    "ssr": "node ./server",
+    "ssr:prod": "NODE_ENV=production node ./server"
+  }
+}

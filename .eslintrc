@@ -1,0 +1,60 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "mocha": true,
+    "node": true
+  },
+  "rules": {
+    // "arrow-body-style": [0, "never"],
+    // // "arrow-body-style": [0],
+    // "comma-dangle": [2, "always-multiline"],
+    // "func-names": 0,
+    // "global-require": 0,
+    // // "global-require": [0],
+    // "import/extensions": [0],
+    // "max-len": 0,
+    // "no-unused-expressions": [0, {
+    //   "allowShortCircuit": true,
+    //   "allowTernary": true
+    // }],
+    // "no-extend-native": 0,
+    "no-param-reassign": 0,
+    // "no-param-reassign": [0],
+    // "no-restricted-syntax": 0,
+    // "no-eval": 0,
+    // "no-unused-vars": [2, { "ignoreRestSiblings": true }],
+    // "no-unused-vars": [0],
+    "no-underscore-dangle": 0,
+    // "no-underscore-dangle": [0],
+    // "no-empty": [0],
+    // "no-constant-condition": [0],
+    // "no-shadow": [0],
+    // "no-useless-computed-key": [0],
+    // "no-return-assign": ["error", "always"],
+    // "prefer-const": 0,
+    // "react/jsx-first-prop-new-line": 0,
+    // "react/jsx-no-bind": 0,
+    // // "react/jsx-no-bind": [0],
+    // "react/prefer-stateless-function": [0],
+    // "react/prop-types": [0],
+    // "react/wrap-multilines": [0],
+    // "react/no-multi-comp": [0],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/forbid-prop-types": [1, { "forbid": ["any"] }]
+    // // "semi": [2, "never"],
+    // // "semi": [0],
+    // "space-before-function-paren": [2, "always"],
+    // "spaced-comment": [0]
+  }
+}

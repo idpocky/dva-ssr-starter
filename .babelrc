@@ -1,0 +1,7 @@
+{
+  "presets": [
+    "es2015", // 否则server启动时`import module`为`unexcpted`
+    "react" // 否则server启动时无法识别`route`中的`jsx`标签
+  ],
+  "plugins": []
+}
